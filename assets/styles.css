@@ -1,11 +1,11 @@
 @import 'reset.css';
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Roboto:wght@300;400&display=swap');
 
 .nav {
   display: flex;
   justify-content: space-between;
   background-color: #2d2e56;
-  height: 4em;
+  height: 9vh;
   padding-left: 1.5em;
   padding-right: 1.5em;
   align-items: center;
@@ -29,4 +29,40 @@
 
 .nav__icon {
   color: white;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3em;
+  width: 100%;
+  align-items: center;
+  height: 45vh;
+  font-family: 'Roboto', sans-serif;
+  color: #32335b;
+}
+
+.card__heading {
+  width: 75%;
+  font-size: 15px;
+  margin-bottom: 0.8em;
+}
+
+.card--info {
+  background-color: #f3cf6f;
+  text-align: center;
+}
+
+.card__input {
+  width: 85%;
+  text-align: center;
+}
+
+.card__button {
+  padding: 0.5em;
+  margin: 0.5em;
+  width: 100%;
+  border-radius: 15px;
+  color: #32335b;
+  border: thin solid #32335b;
 }
