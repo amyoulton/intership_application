@@ -1,1 +1,6 @@
 @import 'reset.css';
+
+.nav {
+  background-color: blue;
+  height: 4em;
+}
