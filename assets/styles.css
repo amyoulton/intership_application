@@ -5,7 +5,7 @@
   display: flex;
   justify-content: space-between;
   background-color: #2d2e56;
-  height: 9vh;
+  height: 8vh;
   padding-left: 1.5em;
   padding-right: 1.5em;
   align-items: center;
@@ -37,9 +37,17 @@
   padding-top: 3em;
   width: 100%;
   align-items: center;
-  height: 45vh;
+  height: 46vh;
   font-family: 'Roboto', sans-serif;
   color: #32335b;
+}
+
+.card__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
 }
 
 .card__heading {
@@ -48,21 +56,49 @@
   margin-bottom: 0.8em;
 }
 
+.card__title {
+  font-size: 25px;
+}
+
 .card--info {
   background-color: #f3cf6f;
   text-align: center;
 }
 
 .card__input {
-  width: 85%;
+  width: 100%;
   text-align: center;
 }
 
 .card__button {
   padding: 0.5em;
-  margin: 0.5em;
-  width: 100%;
+  margin: 0.8em;
+  width: 85%;
   border-radius: 15px;
   color: #32335b;
   border: thin solid #32335b;
+  font-weight: 500;
+}
+
+.card__button--login {
+  background-color: #ffc300;
+  border: none;
+  color: white;
+}
+
+.card__button--input {
+  background: #f0f0f0;
+  border: none;
+}
+
+.card__link {
+  margin-top: 0.5em;
+  color: #32335b;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.fontAwesome {
+  font-family: 'Font Awesome 5 Free', 'Roboto', sans-serif;
+  font-weight: 400;
 }
