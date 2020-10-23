@@ -41,14 +41,16 @@
 
 .nav__link--mobile {
   display: block;
-  color: #414141;
+  color: #343b63;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
   padding: 10px 10px;
   text-decoration: none;
 }
 
 .nav__link--mobile:hover {
   background-color: #ebebeb;
-  opacity: 100%;
 }
 
 .nav__checkbox {
@@ -69,14 +71,9 @@ in the past so this was a fun challenge.
   display: block;
   position: absolute;
   top: 8vh;
-  width: 15em;
+  width: 16em;
   right: 0%;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
-  color: #343b63;
-  font-size: 16px;
   background-color: #f0f0f0;
-  opacity: 90%;
   padding: 15px 15px;
   text-decoration: none;
   border-radius: 0 0 0 10px;
@@ -159,17 +156,24 @@ in the past so this was a fun challenge.
   font-weight: 400;
 }
 
-@media (max-width: 375px) {
-  .card {
-    padding-top: 6%;
-    height: 50vh;
-  }
-}
-
 @media (max-width: 325px) {
   .card {
     padding-top: 6%;
     height: 55vh;
+  }
+}
+
+@media (max-width: 390px) {
+  .card {
+    padding-top: 12%;
+    height: 50vh;
+  }
+}
+
+@media (max-height: 600px) {
+  .card {
+    padding-top: 4%;
+    height: 50vh;
   }
 }
 
@@ -303,13 +307,6 @@ in the past so this was a fun challenge.
   }
 
   .nav__button {
-    display: flex;
-    background-color: #ffc300;
-    padding: 11px;
-    border-radius: 15px;
-    color: white;
-    text-decoration: none;
     margin-left: 2.2em;
-    font-family: 'Roboto', sans-serif;
   }
 }
