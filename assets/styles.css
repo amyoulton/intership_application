@@ -47,7 +47,8 @@
 }
 
 .nav__link--mobile:hover {
-  background-color: white;
+  background-color: #ebebeb;
+  opacity: 100%;
 }
 
 .nav__checkbox {
@@ -70,9 +71,15 @@ in the past so this was a fun challenge.
   top: 8vh;
   width: 15em;
   right: 0%;
-  background-color: black;
-  padding: 10px 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #343b63;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  opacity: 90%;
+  padding: 15px 15px;
   text-decoration: none;
+  border-radius: 0 0 0 10px;
 }
 
 /* The rest of the mobile-first CSS is my main body */
@@ -187,7 +194,9 @@ in the past so this was a fun challenge.
     visibility: hidden;
   }
 
-  /* I recognized the flaw here, as I know that if they shrink the page whilst checked, the links */
+  /* I recognized the flaw here, as I know that if they shrink the page whilst checked, 
+  the links disappear all together but I would typically use JS or something to fix this */
+
   .nav__checkbox:checked ~ .nav__menu {
     display: none;
   }
@@ -206,9 +215,17 @@ in the past so this was a fun challenge.
     display: flex;
     color: white;
     text-decoration: none;
-    margin-left: 2.2em;
+    margin-left: 0.5em;
     font-family: 'Roboto', sans-serif;
     border-right: none;
+  }
+
+  .nav__link--mobile:hover {
+    background-color: initial;
+  }
+
+  .nav__button:hover {
+    background-color: #ffc300;
   }
 
   .nav__button {
@@ -218,7 +235,7 @@ in the past so this was a fun challenge.
     border-radius: 15px;
     color: white;
     text-decoration: none;
-    margin-left: 2.2em;
+    margin-left: 0.5em;
     font-family: 'Roboto', sans-serif;
   }
 
@@ -277,5 +294,22 @@ in the past so this was a fun challenge.
 
   .card__checkbox {
     display: inherit;
+  }
+}
+
+@media (min-width: 1270px) {
+  .nav__link {
+    margin-left: 2.2em;
+  }
+
+  .nav__button {
+    display: flex;
+    background-color: #ffc300;
+    padding: 11px;
+    border-radius: 15px;
+    color: white;
+    text-decoration: none;
+    margin-left: 2.2em;
+    font-family: 'Roboto', sans-serif;
   }
 }
