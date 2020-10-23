@@ -9,6 +9,7 @@
 <title>Aplicar</title>
 </head>
 <body>
+    <div>
     <header>
         <nav class="nav">
             <div class="nav__logo">
@@ -38,21 +39,23 @@
                 <div class="card__input">
                     <input type="password" name="password" placeholder=" &#xf06e; Password" class="card__button card__button--input fontAwesome">
                 </div>
-                <div class="card__input">
+                <div class="card__input card__input--login">
                     <input type="submit" value="Login" class="card__button card__button--login">
                 </div>
+                <span class="card__link">
+                    <div class="card__checkbox"><input type="checkbox" name="card__checkbox">
+                    <label for="card__checkbox" >Remember Me</label></div>
+                    <a href="#">Forgot your password?</a>
+                </span>
            </form>
-           <span class="card__link">
-               <a href="#">Forgot your password?</a>
-           </span>
        </div>
        <div class="card card--info">
         <h1 class="card__title">Hello Friends!</h1>
         <p class="card__heading">Enter your personal details and start journey with us.</p>
-        <div class="card__input">
-            <button class="card__button">Sign up as Student</button>
+        <div class="card__input card__input--info">
+            <button class="card__button card__button--rich">Sign up as Student</button>
         </div>
-        <div class="card__input">
+        <div class="card__input card__input--info">
             <button class="card__button">Sign up as Partner</button>
         </div>
        </div>

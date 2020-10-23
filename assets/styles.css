@@ -102,6 +102,10 @@
   font-weight: 400;
 }
 
+.card__checkbox {
+  display: none;
+}
+
 .fontAwesome {
   font-family: 'Font Awesome 5 Free', 'Roboto', sans-serif;
   font-weight: 400;
@@ -121,29 +125,9 @@
   }
 }
 
-@media (min-width: 1094px) {
+@media (min-width: 1117px) {
   body {
     background-color: #2d345d;
-  }
-
-  .container {
-    display: flex;
-    margin: 15vh;
-    margin-top: 7vh;
-    height: 70vh;
-    border: none;
-    border-radius: 15%;
-  }
-  .card--login {
-    background-color: white;
-    order: 2;
-    height: 100%;
-    border-radius: 0 15px 15px 0;
-  }
-
-  .card--info {
-    height: 100%;
-    border-radius: 15px 0 0 15px;
   }
 
   .nav {
@@ -165,14 +149,74 @@
   .nav__link {
     color: white;
     text-decoration: none;
-    padding-left: 3em;
+    margin-left: 3em;
     font-family: 'Roboto', sans-serif;
   }
 
   .nav__button {
+    background-color: #ffc300;
+    padding: 12px;
+    border-radius: 15px;
     color: white;
     text-decoration: none;
-    padding-left: 3em;
+    margin-left: 3em;
     font-family: 'Roboto', sans-serif;
+  }
+
+  .container {
+    display: flex;
+    margin: 15vh;
+    margin-top: 7vh;
+    height: 70vh;
+    border: none;
+    border-radius: 15%;
+  }
+
+  .card {
+    padding-top: 0;
+  }
+  .card--login {
+    justify-content: center;
+    background-color: white;
+    order: 2;
+    height: 100%;
+    width: 60%;
+    border-radius: 0 15px 15px 0;
+    padding: 11%;
+  }
+
+  .card--info {
+    justify-content: center;
+    height: 100%;
+    width: 40%;
+    padding: 6%;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .card__input--info {
+    width: 78%;
+  }
+
+  .card__input--login {
+    order: 2;
+  }
+
+  .card__title {
+    font-size: 35px;
+  }
+
+  .card__link {
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+  }
+
+  .card__button--rich {
+    background-color: #32335b;
+    color: white;
+  }
+
+  .card__checkbox {
+    display: inherit;
   }
 }
