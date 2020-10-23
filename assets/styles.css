@@ -4,7 +4,7 @@
 .nav {
   display: flex;
   justify-content: space-between;
-  background-color: #2d2e56;
+  background-color: #2d345d;
   height: 8vh;
   padding-left: 1.5em;
   padding-right: 1.5em;
@@ -29,6 +29,10 @@
 
 .nav__icon {
   color: white;
+}
+
+.nav__menu {
+  display: none;
 }
 
 .card {
@@ -114,5 +118,61 @@
   .card {
     padding-top: 6%;
     height: 55vh;
+  }
+}
+
+@media (min-width: 1094px) {
+  body {
+    background-color: #2d345d;
+  }
+
+  .container {
+    display: flex;
+    margin: 15vh;
+    margin-top: 7vh;
+    height: 70vh;
+    border: none;
+    border-radius: 15%;
+  }
+  .card--login {
+    background-color: white;
+    order: 2;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+  }
+
+  .card--info {
+    height: 100%;
+    border-radius: 15px 0 0 15px;
+  }
+
+  .nav {
+    margin-top: 1.5vh;
+    margin-left: 15vh;
+    margin-right: 15vh;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .nav__icon {
+    visibility: hidden;
+  }
+
+  .nav__menu {
+    display: flex;
+  }
+
+  .nav__link {
+    color: white;
+    text-decoration: none;
+    padding-left: 3em;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .nav__button {
+    color: white;
+    text-decoration: none;
+    padding-left: 3em;
+    font-family: 'Roboto', sans-serif;
   }
 }
